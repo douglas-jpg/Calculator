@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap');
+
+:root{
+    --red: #e63946;
+    --grayred: #89212A;
+    --blue: #457b9d;
+    --lightblue: #a8dadc;
+    --darkblue: #1D3557;
+    --black: #0d1b2a;
+    --gray: #4b4b55;
+    --white: #F1FAEE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(var(--darkblue), var(--lightblue));
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--red);
+    box-shadow: 0 0 0 1px #e94c59 inset, 
+    0 0 0 2px rgba(255 255 255 / 0.15) inset, 
+    0 8px 0 0 var(--grayred), 
+    0 8px 8px 1px var(--grayred);
+}
+
+button{
+    border: none;
+    height: 75%;
+    width: 75%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    background-color: var(--blue);
+    box-shadow: 0 0 0 1px #4f90b8 inset, 
+    0 0 0 2px rgba(255 255 255 / 0.15) inset, 
+    0 8px 0 0 var(--darkblue), 
+    0 8px 8px 1px var(--black);
+}
+
+button:active{
+    border: none;
+    height: 75%;
+    width: 75%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px var(--black) inset;
+    background-color: var(--blue);
+}
+
+#dot{
+    font-weight: 900;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 30px;
+    margin: 10px 0 10px 0;
+    height: 30%;
+    width: 90%;
+    color: var(--white);
+    background-color: var(--gray);
+    border-radius: 30px;
+    /* border: var(--black) solid 2px; */
+    box-shadow: 0 0 0 4px rgb(151, 35, 45) inset;
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px 0 0 20px;
+    height: 70%;
+    width: 100%;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    height: 60%;
+    width: 100%;
+    border-top: solid black 1px
+}
+
+.expression{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 0.9rem;
+    letter-spacing: 5px;
+    height: 30%;
+    width: 100%;
+}
